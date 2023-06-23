@@ -1,0 +1,217 @@
+*
+{
+    padding:0px; 
+}
+/* MAIN HEADER CSS */
+.header-section
+{
+    background: rgb(230, 253, 247)
+}
+ .container
+ {
+     margin:0;
+ }
+ /* LOGO CSS */
+ .logo
+ { 
+     margin-left:45px;
+     margin-top:6px;
+     height:85px;
+     width:85px;
+ }
+/* MENU CSS*/
+ .menu-bar
+ {
+    float:right;
+	font-weight: 500;
+	position: relative;
+    top: 38px;
+    right:50px;  
+ }
+ .menu-bar ul  
+{
+     display:inline-flex; 
+}
+ .menu-bar ul li
+ {
+   padding:0px 20px;
+    list-style-type:none;
+    
+ }
+ .menu-bar ul li a
+ {
+     color: black;
+     font-size:17px;
+     text-decoration:none;
+ }
+ .menu-bar ul li a:hover
+ {
+     color:rgb(110, 90, 124);
+     border-bottom:2px solid black;
+     transition:-1s;    
+ }
+
+
+ /* ICONS Eg :- LOGIN, CART, WHISHLIST */
+.icons
+{
+    float:right;
+	font-weight: 500;
+	position: relative;
+    top: 37px;
+    left:520px;
+    
+}
+.icons ul 
+{
+    
+    display:inline-flex; 
+}
+.icons ul li
+ {
+   padding:0px 22px;
+    list-style-type:none;
+    text-decoration:none;
+ }
+ .icons ul li a
+ {
+     font-size:17px;
+     color:rgb(78, 72, 72)
+}
+/* HEART*/
+.fa-heart
+{
+    font-size:22px;
+}
+.fa-heart:hover
+{
+    font-size:23px;
+    color:rgb(219, 90, 139);    
+}
+/* CART */
+.fa-shopping-cart
+{
+    font-size:25px;
+}
+.fa-shopping-cart:hover
+{
+    font-size:26px;
+    color:rgb(102, 78, 238)
+}
+
+/* LOGIN USER */
+.fa-user-circle-o
+{
+    font-size:22px;
+}
+.fa-user-circle-o:hover
+{
+    font-size:23px;
+    color:rgb(11, 94, 248)
+}
+
+/* PRODUCTS LOGO ICONS */
+.product-section
+{
+    background:linear-gradient(45deg,#ddd5ec, #f7d6d3);
+    
+}
+.product-circle
+{
+    
+    margin:0;
+}
+/* PRODUCT - LOGO*/
+.product-img ul
+{
+    display:inline-flex;
+}
+.product-img ul li
+{
+    
+    margin-left:75px;
+    margin-top:25px;
+    
+    list-style-type:none;
+
+}
+.product-img ul li img
+{
+    height:55px;
+    width:55px;
+    border-radius:50%;
+    box-shadow:1px 1px 4px 1px rgb(175, 29, 29);
+    border: solid 2px rgba(130, 224, 236, 0.47);
+    transition: .4s;
+  
+       
+}
+.product-img ul li img:hover
+{
+    box-shadow:1px 1px 4px 1px rgb(240, 243, 78);
+    border: solid 2px rgba(180, 46, 46, 0.47);
+    transition: .4s;
+    -webkit-transform: rotateY(150deg);
+  -ms-transform: rotateY(150deg);
+  transform: rotateY(150deg);
+}
+    
+
+/* PRODUCT TEXT */
+.prodcut-text ul li 
+{
+    display:inline-flex;
+    font-weight:550;
+    font-size:16px;
+    color:rgb(10, 2, 2);
+
+}
+.prodcut-text ul li:hover
+{
+    display:inline-flex;
+    font-weight:790;
+    font-size:16px;
+    color:rgb(241, 24, 24);
+    text-shadow:10px 4px 4px 1px black;
+    
+}
+.phone-text
+{
+    margin-left:72px;
+}
+.grocery-text
+{
+    margin-left:73px;
+}
+.cloth-text
+{
+    margin-left:73px;
+}
+.acc-text
+{
+    margin-left:63px;
+}
+.jewell-text
+{
+    margin-left:58px;
+}
+.shoes-text
+{
+    margin-left:65px;
+}
+.electronic-text
+{
+    margin-left:58px;
+}
+.furniture-text
+{
+    margin-left:56px;
+}
+.stationey-text
+{
+    margin-left:59px;
+}
+.appliances-text
+{
+    margin-left:50px;
+}

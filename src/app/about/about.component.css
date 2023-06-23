@@ -1,0 +1,116 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+.all
+{
+    box-shadow:6px 8px 15px 0px rgb(165, 158, 158);
+    background-color: rgb(227, 230, 216);
+    border-radius:10%;
+    margin-top:160px;
+    margin-left:0px;
+    margin-bottom: 150px;
+    text-align:center;
+    height:590px;
+    width:600px;
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:black;
+}
+.about
+{
+    text-align:center;
+    color:black;
+}
+.title
+{
+    padding-top:30px;
+    padding-bottom:15px;
+    color:black;
+    text-shadow: 2px 2px   rgb(214, 200, 200);
+    font-size: 40px;
+   
+}
+.aboutus
+{
+   text-align:Center;
+    font-size:19px;
+    padding-top:30px;
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-right:30px;
+    color:rgb(215, 233, 48) rgb(2, 1, 1);
+    text-shadow: 0px 1px rgb(235, 201, 159) ;
+}
+
+.dev
+{
+    margin-top:40px;
+}
+.topic
+{
+    font-size:25px;
+    font-weight:bold;
+    text-shadow: 2px 2px   rgb(214, 200, 200);
+}
+.names1
+{
+    display:inline-flex;
+}
+
+.names2
+{
+    display:inline-flex;
+}
+.ac 
+{
+    font-size:17px;
+    text-align:center;
+    height:35px;
+    width:160px;
+    border-radius:15%;
+    background:linear-gradient(50deg,#f4fa9e, #f3cdac);
+    box-shadow:6px 8px 15px 0px rgb(165, 158, 158);
+    margin-left: 00px;
+    margin-top: 50px;
+}
+.ra
+{
+    font-size:17px;
+    text-align:center;
+    height: 35px;
+    width: 160px;
+    border-radius:13%;
+    background:linear-gradient(50deg,#f4fa9e, #f3cdac);
+    box-shadow:6px 8px 15px 0px rgb(165, 158, 158);
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.kp
+{
+    font-size:17px;
+    text-align:center;
+    height: 35px;
+    width: 160px;
+    border-radius:13%;
+    background:linear-gradient(50deg,#f4fa9e, #f3cdac);
+    box-shadow:6px 8px 15px 0px rgb(165, 158, 158);
+    margin-left: 00px;
+    margin-top: 30px;
+}
+.js
+{
+    font-size:17px;
+    text-align:center;
+    height: 35px;
+    width: 160px;
+    border-radius:13%;
+    background:linear-gradient(50deg,#f4fa9e, #f3cdac);
+    box-shadow:6px 8px 15px 0px rgb(165, 158, 158);
+    margin-left: 30px;
+    margin-top: 30px;
+}

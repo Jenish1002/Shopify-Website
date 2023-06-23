@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"> <!---------used for size-->
+            <div class="jumbotron"> <!----used for color -->
+                <h2>Sign In </h2>
+                <form name="form" [formGroup]="form" (ngSubmit)="form.valid && onSubmit()">
+                   
+                   <!------------EMAIL--------------->
+                    <div class="form-group">
+                        <label for="email" class="text">Email-Id</label>
+                        <input type="text" class="form-control" formControlName="email" [ngClass]="{'is-invalid':
+                        form.get('email').touched && form.get('email').invalid}"/>
+                        <div *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+                            <div *ngIf="form.get('email').errors.required" class="req">Email is required</div>
+                            <div *ngIf="form.get('email').errors.email" class="req">Email must be a valid email address</div>
+                        </div>
+                    </div>
+                    <!-------------PASSWORD--------------->
+                    <div class="form-group">
+                        <label for="password" class="text">Password</label>
+                        <input type="password" class="form-control" formControlName="password" [ngClass]="{'is-invalid':
+                        form.get('password').touched && form.get('password').invalid}"/>
+                        <div *ngIf=" form.get('password').touched && form.get('password').invalid" class="invalid-feedback">
+                            <div *ngIf="form.get('password').errors.required" class="req">password is required</div>
+                            <div *ngIf="form.get('password').errors.minlength" class="req">password must be atleast 6 character</div>
+                        </div>
+                    </div>
+                    
+                    <!---------------SUBMIT-------------->
+
+                    <div class="form-group">
+                        <button  class="btn btn-dark" [disabled]="!form.valid">LOG IN</button>
+                    </div>
+                </form> 
+                <!------------------------------------------CREATE AN ACCOUNT---------------------------------------------->
+                <hr>
+                <div class="c-acc">
+                   <a routerLink='/register' class="ca"><p>Create an account</p></a>
+                </div>
+                
+                </div><!-------JUMBOTRON END--->
+        </div><!---------COLOUMN END------>
+    </div><!------------ROW END-->
+</div><!-------------------CONTAINER END ------------>

@@ -1,0 +1,68 @@
+<!-----header-->
+<header class="header-section">
+  <!---LOGO-->
+  <div class="container">
+    <a  routerLink='/home'> <img src="assets\image\shopify1.png" class="logo"></a>
+  
+  <!---menu-->
+  <div class="menu-bar">
+      <ul>
+          <li><a routerLink='/home' class="active">HOME</a> </li>
+          <li><a routerLink='/contact'>CONTACT US</a> </li>
+          <li><a routerLink='/about'>ABOUT US</a> </li>
+      </ul>
+  </div>
+  <div class="icons">
+      <ul>
+          <li><a  routerLink='/home'><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+          <li><a  routerLink='/home'><i class="fa fa-shopping-cart" aria-hidden="true"></i></a> </li>
+          <li><a routerLink='/signup'><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+      </ul>
+  </div>
+  </div>
+</header>
+<!---menu-end-->
+<!---main productes icons-->
+<section class="product-section">
+<div class="product-circle">
+      <!----ICONS-IMAGES-->
+  <div class="product-img">
+      <ul>
+          <li> <a routerLink="/mobiles"><img src="assets\image\icon\phone2.png" class="phone-img"></a></li>
+          <li> <a routerLink="/grocery"><img src="assets\image\icon\grocery2.png" class="grocery-img"></a></li>
+          <li> <a routerLink="/clothes"><img src="assets\image\icon\cloth4.png" class="cloth-img"></a></li>
+          <li> <a routerLink="/accessories"><img src="assets\image\icon\acccesories.png" class="acc-img"></a></li>
+          <li> <a routerLink="/jewellery"><img src="assets\image\icon\jewellary.png" class="jewell-img"></a> </li>
+          <li> <a routerLink="/footwear"><img src="assets\image\icon\shoes.png" class="shoes-img"></a> </li>
+          <li> <a routerLink="/electronics"><img src="assets\image\icon\bulb2.png" class="electronic-img"></a></li> 
+          <li> <a routerLink="/furniture"><img src="assets\image\icon\furniture-2.png" class="furniture-img"></a> </li>   
+          <li> <a routerLink="/stationery"><img src="assets\image\icon\stationery2.png" class="stationery-img"></a></li>
+          <li> <a routerLink="/appliances"><img src="assets\image\icon\fridge.png" class="appliances-img"></a> </li>
+      </ul>
+  </div>
+  <!-----ICONS-TEXT-->
+  <div class="prodcut-text">
+      <ul>
+          <li><p class="phone-text">Mobiles</p></li>
+          <li><p class="grocery-text">Grocery</p> </li>  
+          <li><p class="cloth-text">Clothes</p></li>  
+          <li><p class="acc-text">Accessories</p></li>
+          <li><p class="jewell-text">Jewellery</p></li>
+          <li><p class="shoes-text">Footwear</p> </li>
+          <li><p class="electronic-text">Electronics</p></li>   
+          <li><p class="furniture-text">Furniture</p></li>
+          <li><p class="stationey-text">Stationery</p></li>
+          <li><p class="appliances-text">Appliances</p></li>
+      </ul>
+  </div>
+</div>
+</section>
+<!--Product END-->
+
+<!-----------*********************************************************************************************------------>
+
+<!----------ROUTER_OUTLET--------------->
+
+<router-outlet></router-outlet>
+
+<!------ROUTER VIEWS GOES HERE------>

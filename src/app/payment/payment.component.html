@@ -1,0 +1,155 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"> <!---------used for size-->
+            <div class="jumbotron"> <!----used for color -->
+                <h2>Check Out</h2>
+                <form name="form" [formGroup]="form" (ngSubmit)="form.valid && onSubmit()">
+                   
+                    <!---------------FIRST NAME--------------------->
+                       <div class="fnln">   
+                           <div class="fn">               
+                          <div class="form-group">
+                            <label for="firstName" class="text">First Name</label>
+                            <input type="text" class="form-control" formControlName="firstName" [ngClass]="{'is-invalid':
+                        form.get('firstName').touched && form.get('firstName').invalid}"/>
+                            <div class="invalid-feedback">
+                                <div class="req"> First Name is required</div>
+                            </div>
+                        </div>
+                        </div>
+
+                    <!-----------------LAST NAME---------------------------->
+                            <div class="ln">
+                            <div class="form-group">
+                            <label for="lastName" class="text">Last Name</label>
+                            <input type="text" class="form-control" formControlName="lastName" [ngClass]="{'is-invalid':
+                            form.get('lastName').touched && form.get('lastName').invalid}"/>
+                            <div class="invalid-feedback">
+                                <div class="req">last Name is required</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-----------------ADDRESS---------------------------->
+                    <div class="form-group" class="add">
+                        <label for="address" class="text">Address</label>
+                        <textarea type="text" rows="2" cols="2" class="form-control" formControlName="address" [ngClass]="{'is-invalid':
+                        form.get('address').touched && form.get('address').invalid}"></textarea>
+                        <div class="invalid-feedback">
+                            <div class="req">Address is required</div>
+                        </div>
+                    </div>
+                
+               <!---------------------------STATE----------------------------------------------->
+               <div class="stct">
+               <div class=st>
+               <div class="form-group">
+                    <label for="state" class="text">State</label>
+                    <input type="text" class="form-control" formControlName="state" [ngClass]="{'is-invalid':
+                    form.get('state').touched && form.get('state').invalid}"/>
+                    <div class="invalid-feedback">
+                        <div class="req">State Name is required</div>
+                    </div>
+                    </div>
+                    </div>
+                <!-------------------------------CITY-------------------------------->
+                <div class="ct">
+                <div class="form-group">
+                    <label for="city" class="text">City</label>
+                    <input type="text" class="form-control" formControlName="city" [ngClass]="{'is-invalid':
+                    form.get('city').touched && form.get('city').invalid}"/>
+                    <div class="invalid-feedback">
+                        <div class="req">City Name is required</div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!---------------------MOBILE-NUMBER------------------------>
+                    <div class="mozc">
+                    <div class="mno">
+                    <div class="form-group">
+                        <label for="mobileno" class="text">Mobile-No</label>
+                        <input type="text" class="form-control" formControlName="mobileno" [ngClass]="{'is-invalid':
+                        form.get('mobileno').touched && form.get('mobileno').invalid}"/>
+                        <div *ngIf=" form.get('mobileno').touched && form.get('mobileno').invalid" class="invalid-feedback">
+                            <div *ngIf="form.get('mobileno').errors.required" class="req">Mobile No. is required</div>
+                            <div *ngIf="form.get('mobileno').errors.maxlength" class="req">Mobile No. should be less than 10</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!---------------------ZIP-CODE--------------------->
+                    <div class="zc">
+                    <div class="form-group">
+                        <label for="zip" class="text">Zip-Code</label>
+                        <input type="text" class="form-control" formControlName="zip" [ngClass]="{'is-invalid':
+                        form.get('zip').touched && form.get('zip').invalid}"/>
+                        <div *ngIf=" form.get('zip').touched && form.get('zip').invalid" class="invalid-feedback">
+                            <div *ngIf="form.get('zip').errors.required" class="req">Zip-Code is required</div>
+                            <div *ngIf="form.get('zip').errors.maxlength" class="req">Zip-Code should be less than 6</div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!------------------------------CARD DETAILS------------------------------->
+                        <div class="card-details">
+                            <h3>Credit / Debit / ATM Card Details</h3>
+                        </div>
+                    <!------------------------------------CARD HOLDER's NAME--------------------------------------->
+                    <div class="cncn">
+                       <div class="cn">
+                    <div class="form-group">
+                        <label for="cardname" class="text">Name on card</label>
+                        <input type="text" class="form-control" formControlName="cardname" [ngClass]="{'is-invalid':
+                    form.get('cardname').touched && form.get('cardname').invalid}"/>
+                        <div class="invalid-feedback">
+                            <div class="req"> Name on Card is required</div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-------------------------------------CARD NUMBER------------------------------->
+                    <div class="cno">
+                    <div class="form-group">
+                        <label for="cardno" class="text">Card Number</label>
+                        <input type="text" class="form-control" formControlName="cardno" [ngClass]="{'is-invalid':
+                    form.get('cardno').touched && form.get('cardno').invalid}"/>
+                        <div class="invalid-feedback">
+                            <div class="req"> Card No. is required</div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!------------------------------------------Exipiry-Date------------------------------------------->
+                  <div class="excvv">
+                    <div class="ex">
+                    <div class="form-group">
+                        <label for="expiry" class="text">Expiration</label>
+                        <input type="text" class="form-control" formControlName="expiry" [ngClass]="{'is-invalid':
+                    form.get('expiry').touched && form.get('expiry').invalid}"/>
+                        <div class="invalid-feedback">
+                            <div class="req"> Expiration is required</div>
+                        </div>
+                        </div>
+                        </div>
+                        <!----------------------------------CVV------------------------------------>
+                      <div class="cv">
+                        <div class="form-group">
+                            <label for="cvv" class="text">CVV</label>
+                            <input type="text" class="form-control" formControlName="cvv" [ngClass]="{'is-invalid':
+                        form.get('cvv').touched && form.get('cvv').invalid}"/>
+                            <div class="invalid-feedback">
+                                <div class="req"> CVV is required</div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                    <!---------------SUBMIT-------------->
+
+                    <div class="form-group">
+                        <button  class="btn btn-dark" [disabled]="!form.valid">Place Order</button>
+                    </div>
+                </form> 
+                </div><!-------JUMBOTRON END--->
+        </div><!---------COLOUMN END------>
+    </div><!------------ROW END-->
+</div><!-------------------CONTAINER END ------------>

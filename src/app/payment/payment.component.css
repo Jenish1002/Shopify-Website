@@ -1,0 +1,99 @@
+
+.jumbotron 
+{
+    border-radius:3%;
+    background:linear-gradient(50deg,#6ae292, #90aeee);
+    box-shadow:6px 8px 15px 0px rgb(165, 158, 158);
+    margin-top:10px;
+    margin-left:280px;
+    height:900px;
+    width:550px;
+}
+.jumbotron h2
+{
+    text-align:center;
+    margin-bottom:25px;  
+    
+}
+.text
+{
+    font-weight:650;
+ 
+}
+.req
+{
+    font-weight:bold;
+}
+.form-control
+{
+    border-color:black;
+}
+.btn-dark
+{
+    margin-top:20px;
+    height:50px;
+    width:500px;
+    font-size:24px;
+}
+.fnln
+{
+    display:inline-flex;
+    padding-left:25px;
+}
+.ln
+{
+    padding-left:25px;
+    padding-right:15px;
+}
+.add
+{
+    padding-left:22px;
+    padding-right:27px;
+}
+.stct
+{
+    padding-top:20px;
+    display:inline-flex;
+    padding-left:25px;
+}
+.ct
+{
+    padding-left:25px;
+    padding-right:15px;
+}
+.mozc
+{
+    display:inline-flex;
+    padding-left:25px;
+}
+.zc
+{
+    padding-left:25px;
+    padding-right:15px;
+}
+.card-details h3
+{
+    padding-top:25px;
+    text-align:center;
+}
+.cncn
+{
+    padding-top:25px;
+    display:inline-flex;
+    padding-left:25px;
+}
+.cno
+{
+    padding-left:25px;
+    padding-right:15px;
+}
+.excvv
+{
+    display:inline-flex;
+    padding-left:25px;
+}
+.cv
+{
+    padding-left:25px;
+    padding-right:15px;
+}

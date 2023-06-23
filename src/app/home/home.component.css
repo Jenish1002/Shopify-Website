@@ -1,0 +1,438 @@
+*
+{
+    padding:0px; 
+}
+
+/*-----slider------*/
+.carousel img
+{ 
+    height:280px;
+}
+/*---slider end----------*/
+
+/*----featured products -------*/
+
+/*---TITLE-------*/
+.title-product
+{
+    margin-top:40px;
+    padding:9px 120px;
+    background:rgb(105, 194, 221);
+    color:black;
+    width:500px;
+    margin-bottom:30px;
+    display:flex;
+}
+.title-product h2
+{
+    font-size:28px;
+}
+.title-product::after
+{
+    content:'';
+    border-top:60px solid rgb(105, 194, 221);
+    border-right:40px solid transparent;
+    position:absolute;
+    display:flex;
+    margin-top:-9px;
+    margin-left:379px;
+
+}
+/*-------------TITLE END-------------*/
+.featured-products
+{
+    padding:30px 70px 50px 100px;
+    object-fit:cover;
+}
+.featured-products img
+{
+    cursor:pointer;
+    transition: .1s;
+}
+.featured-products img:hover
+{
+     transform: scale(0.9); 
+}
+.cloth
+{
+    height:250px;
+    width:400px;
+    padding:20px 17px 10px 13px;
+}
+.appliances
+{
+    height:250px;
+    width:390px;
+    
+    padding:20px 15px 10px 16px;
+}
+.footwear
+{
+    height:250px;
+    width:370px;
+    padding:20px 5px 10px 7px;
+}
+.watches
+{
+    height:250px;
+    width:390px;
+    padding:20px 5px 10px 13px;
+    
+}
+.stationery
+{
+    height:250px;
+    width:390px;
+    padding:20px 15px 10px 16px;
+}
+.mobile
+{
+    height:250px;
+    width:370px;
+    padding:20px 5px 10px 7px;
+}
+.furniture
+{
+    height:250px;
+    width:390px;
+    padding:20px 5px 10px 13px;
+}
+.jewellery
+{
+    height:250px;
+    width:390px;
+    padding:20px 15px 10px 16px;
+}
+.grocery
+{
+    height:250px;
+    width:370px;
+    padding:20px 5px 10px 7px;
+}
+/*----------FEATURED _ PRODUCTS CSS END ------------*/
+
+/*-----------LATEST PRODUCTS-----------------*/
+
+
+.container
+{
+    margin:0;
+}
+/*---TITLE-------*/
+.title-box
+{
+    padding:10px 130px;
+    background:rgb(105, 194, 221);
+    color:black;
+    width:500px;
+    margin-bottom:30px;
+    display:flex;
+    
+}
+.title-box h2
+{
+    font-size:28px;
+}
+.title-box::after
+{
+    content:'';
+    border-top:61px solid rgb(105, 194, 221);
+    border-right:40px solid transparent;
+    position:absolute;
+    display:flex;
+    margin-top:-10px;
+    margin-left:370px;
+
+}
+/*-------------TITLE END-------------*/
+
+
+.latest
+{
+    margin:0px;  
+}
+
+.overlay-right
+{
+    display:block;
+    opacity:0;
+    position:absolute;
+    top:60%;
+    margin-left:0px; 
+}
+
+.overlay-right .fa
+{
+    cursor:pointer;
+    background-color:white;
+    color:black;
+    height:35px;
+    width:35px;
+    font-size:20px;  
+    padding:7px;
+    margin-left:160px;
+    margin-top:0%;
+    margin-bottom:2%;
+}
+.overlay-right .btn-secondary
+{
+    background:none !important;
+    border:none !important;
+    box-shadow:none !important;
+}
+
+
+.product-top:hover .overlay-right
+{
+    opacity:1;
+    margin-left:5%;
+    transition:0.5s;
+}
+.watch-full
+{
+    padding-left:70px;
+}
+.jewell-full
+{
+    padding-left:150px;   
+}
+.mobile-full
+{
+    padding-left:20px;
+}
+/*---------BUTTON BUY NOW----------------*/
+.square_btn{
+    display: inline-block;
+    margin-top:5px;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    color:rgb(19, 18, 18);
+    text-shadow: 1px 1px 1px rgba(228, 178, 178, 0.37);
+    background-image: -webkit-linear-gradient(#b1e7ee 0%, #9fdcf8 100%);
+    background-image: linear-gradient(#88dce2 0%, #ecb8cc 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #5e7fca;
+    
+}
+
+.square_btn:active
+{
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+/*----------------product-bottom text  css---*/
+.text
+{
+    margin:0px;
+    display:inline-flex;
+   
+   
+}
+.text-tv
+{
+    margin-top:15px;
+    margin-left:170px;
+}
+.text-watch
+{
+    margin-top:15px;
+    margin-left:80px;
+
+}
+.text-jewell
+{
+    margin-top:15px;
+    margin-left:160px;
+
+}
+.text-mobile
+{
+    margin-left:180px;
+}
+.text-camera
+{
+    margin-left:140px;
+
+}
+.text-sari
+{
+    
+    margin-left:110px;
+}
+.product-bottom .fa
+{
+    color:rgb(255, 140, 0);
+    font-size:15px;
+}
+.product-bottom h3
+{
+    font-size:20px;
+    font-weight:bold;
+}
+.product-bottom h5
+{
+    font-size:19px;    
+}
+/*-----------------images-----------------*/
+
+.tv
+{
+    margin-left:150px;
+    margin-top:72px;
+    height:200px;
+    width:300px;
+}
+.watch
+{
+    height:200px;
+    width:300px;
+    margin-left:220px;
+    margin-top:68px;
+}
+.jewell
+{
+    height:200px;
+    width:300px;
+    margin-left:320px;
+    margin-top:68px;
+}
+.cell-mobile
+{
+    margin-left:150px;
+    margin-top:72px;
+    height:230px;
+    width:280px;
+}
+.camera
+{
+    margin-left:140px;
+    margin-top:72px;
+    height:245px;
+    width:300px;
+}
+.sari
+{
+    margin-left:150px;
+    margin-top:100px;
+    height:200px;
+    width:300px;
+
+
+}
+/*-------------------------FOOTER-FEATURES-----------------------*/
+.del
+{
+    margin:0px;
+    padding-left:300px;
+    padding-top:100px;
+    padding-bottom:20px;
+    
+}
+.car
+{
+    opacity:60%;
+    padding-top:15px;
+    height:85px;
+    width:75px;
+    
+}
+.car-d
+{
+padding-top:12px;
+}
+.money
+{
+    opacity:60%;
+    height:90px;
+    width:120px;
+    padding-top:0px;
+}
+.money-d
+{
+    padding-top:6px;
+}
+.cs
+{
+    opacity:60%;
+    padding-top:0px;
+    height:80px;
+    width:100px;
+}
+.cs-d
+{
+    padding-top:15px;
+}
+
+/*-----------------------FOOTER FEATURE END------------------------*/
+
+/*------------------FOOTER--------------------------*/
+
+.footer 
+{
+    padding-left: 170px;
+    margin:0px;
+    background: #222121;
+    padding-top: 46px;
+    padding-bottom: 50px;
+
+}
+
+
+.social-links a {
+	margin-right: 88px;
+	display: inline-block;
+}
+.social-links a i {
+	font-size: 30px;
+	color: #d7d7d7;
+	float: left;
+	margin-right: 19px;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.social-links a span {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #9f9fa0;
+	padding-top: 10px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.social-links a.instagram:hover i {
+	color: #e48334;
+}
+
+
+.social-links a.twitter:hover i {
+	color: #5abed6;
+}
+
+.social-links a.pinterest:hover i {
+	color: #CD212D;
+}
+
+.social-links a.facebook:hover i {
+	color: #39599F;
+}
+
+.social-links a.youtube:hover i {
+	color: #D12227;
+}
+
+.social-links a.tumblr:hover i {
+	color: #7598ca;
+}
+
+.social-links a:hover span {
+	color: #fff;
+}
+
+/*-----------FOOTER END---------*/
